@@ -11,6 +11,7 @@ import Img2 from '../../assets/background/logo-stretched-wide-e1638035459893.png
 import Img3 from '../../assets/background/ftf-e1638035426166.png'
 import Img4 from '../../assets/background/fs_logo_300px.png'
 import AlarmOnIcon from '@mui/icons-material/AlarmOn';
+import Bg2 from '../../assets/background/bg2.png'
 import Optimiz from '../../assets/background/Optimized-OWINKS1-1024x853.jpg'
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 function Home() {
@@ -99,7 +100,7 @@ function Home() {
 
 	return <div className='container mx-auto'>
 
-
+	
 
 		<div class=" flex justify-evenly gap-5  flex-col  lg:flex-row mt-14  lg:mt-28">
 			<div className="max-w-lg   p-4 lg:p-0 lg:text-start">
@@ -112,7 +113,7 @@ function Home() {
 				<div class="flex justify-center lg:justify-start space-x-2 mt-5">
 					<button
 						type="button"
-						class="inline-block px-6 py-2.5 bg-primary text-white font-medium text-sm leading-tight uppercase  shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+						class="inline-block px-6 py-2.5 bg-orange-600 text-white font-medium text-sm leading-tight uppercase  shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
 					>
 						<ArrowCircleRightIcon />	Book For 30 Minute Of Demo
 					</button>
@@ -157,7 +158,7 @@ function Home() {
 				<div class="flex justify-start lg:justify-start space-x-2 ">
 					<button
 						type="button"
-						class="inline-block rounded px-4 py-2 bg-orange-700 text-white font-medium text-sm leading-tight uppercase  shadow-md"
+						class="inline-block rounded px-4 py-2 bg-orange-600 text-white font-medium text-sm leading-tight uppercase  shadow-md"
 					>
 						<ArrowCircleRightIcon />	View Our Features
 					</button>
@@ -266,7 +267,7 @@ function Home() {
 			<div class="flex justify-center  space-x-2 mt-5 mb-10">
 				<button
 					type="button"
-					class="inline-block px-6 py-2.5 rounded bg-primary text-white font-medium text-sm leading-tight uppercase  shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+					class="inline-block px-6 py-2.5 rounded bg-orange-600 text-white font-medium text-sm leading-tight uppercase  shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
 				>
 					<ArrowCircleRightIcon /> Connect Us For More Detail
 				</button>
@@ -447,49 +448,198 @@ function Home() {
 			</div>
 
 			<div className='relative w-full pb-[56.25%] h-0'>
-				<iframe className='absolute top-0 left-0 w-[70%] h-full lg:h-[40%] mr-[15%] ml-[15%]'  src="https://www.youtube.com/embed/LMMF9Ka_bLQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe className='absolute top-0 left-0 w-[70%] h-full lg:h-[40%] mr-[15%] ml-[15%]' src="https://www.youtube.com/embed/LMMF9Ka_bLQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 		</div>
 
-<div className='mt-[-20%]'>
-			<h1 className='text-2xl font-bold text-center  text-blue-900 text-opacity-70 mt-14'>Enhance Your Client Experience</h1>
-			<hr className='h-[5px] mx-auto w-28 bg-red-700 lg:mt-5 lg:mb-5' />
+		<div className='mt-[-15%] lg:mt-[-20%]'>
+			<h1 className='text-lg lg:text-2xl font-bold text-center  text-blue-900 text-opacity-70 mt-24 lg:mt-14'>Enhance Your Client Experience</h1>
+			<hr className='h-[5px] mx-auto w-28 bg-red-700  mt-2 lg:mt-5 mb-2 lg:mb-5' />
 			<p className='text-center mx-auto text-sm '>Create a welcoming client experience through online booking, secure messaging and online intake forms.
 			</p>
-</div>
-		<div className='flex'>
-		
-			<div>
-				<img src={Optimiz} className='h-96 w-96' alt="" />
+		</div>
+		<div class=" flex justify-evenly gap-5  flex-col  lg:flex-row mt-14  lg:mt-28 lg:mx-20">
+			<div  className='w-full'>
+				<img src={Optimiz} className='h-96 w-auto' alt="" />
 			</div>
-			<div>
-				<div>
-					<div className="flex justify-around">
-						<MailOutlineIcon sx={{fontSize:40}} />
-						<p className='border rounded-full p-2 bg-red-500'>client portal</p>
+
+			<div className="flex flex-col gap-2 p-2 lg:p-0 w-full">
+
+				<div className='border-2  p-4 shadow-lg rounded'>
+					<div className="flex justify-between lg:flex-row ">
+						<div >
+							<ImageSearchIcon sx={{ fontSize: 40 }} />
+
+						</div>
+						<p className='text-xs lg:text-sm rounded-full flex items-center  px-6 bg-orange-600 text-white'>Data</p>
+
 					</div>
-					<h1 className='text-blue-700 bg-opacity-70 font-medium'>Secure Account</h1>
+
+					<h1 className='text-sm mt-4 font-medium text-blue-900 text-opacity-70'>Select Feature</h1>
+
 
 				</div>
-				<div>
-					<div className="flex justify-around">
-						<MailOutlineIcon sx={{ fontSize: 40 }} />
-						<p className='border rounded-full p-2 bg-red-500'>client portal</p>
+				<div className='border-2  p-4 shadow-lg rounded'>
+					<div className="flex justify-between lg:flex-row ">
+						<div >
+							<ImageSearchIcon sx={{ fontSize: 40 }} />
+
+						</div>
+						<p className='text-xs lg:text-sm rounded-full flex items-center  px-6 bg-orange-600 text-white'>Data</p>
+
 					</div>
-					<h1 className='text-blue-700 bg-opacity-70 font-medium'>Secure Account</h1>
+
+					<h1 className='text-sm mt-4 font-medium text-blue-900 text-opacity-70'>Select Feature</h1>
+
 
 				</div>
-				<div>
-					<div className="flex justify-around">
-						<MailOutlineIcon sx={{ fontSize: 40 }} />
-						<p className='border rounded-full p-2 bg-red-500'>client portal</p>
+				<div className='border-2  p-4 shadow-lg rounded'>
+					<div className="flex justify-between lg:flex-row ">
+						<div >
+							<ImageSearchIcon sx={{ fontSize: 40 }} />
+
+						</div>
+						<p className='text-xs lg:text-sm rounded-full flex items-center  px-6 bg-orange-600 text-white'>Data</p>
+
 					</div>
-					<h1 className='text-blue-700 bg-opacity-70 font-medium'>Secure Account</h1>
+
+					<h1 className='text-sm mt-4 font-medium text-blue-900 text-opacity-70'>Pay a balance with credit card using Stripe</h1>
+
 
 				</div>
+
 			</div>
+
 
 		</div>
+
+		{/**<div className='flex flex-col gap-5 mt-14'>
+
+
+				<img src={Optimiz} className='h-96 w-96' alt="" />
+
+			<div>
+				<div className="border p-5">
+					<div className="flex lg:gap-[400px] mb-2 ">
+						<MailOutlineIcon sx={{ fontSize: 40 }} />
+						<button className='border text-sm  rounded-full p-2   bg-red-500'>client portal</button>
+					</div>
+					<h1 className='text-xl font-medium text-blue-900 text-opacity-70'>Secure Messaging</h1>
+				</div>
+
+
+
+
+
+			</div>
+
+		</div> */}
+
+		<h1 className='text-lg lg:text-2xl font-bold text-center  text-blue-900 text-opacity-70 mt-24 lg:mt-14'>Get In Touch With Us</h1>
+		<hr className='h-[5px] mx-auto w-28 bg-red-700  mt-2 lg:mt-5 mb-2 lg:mb-5' />
+		<div className="flex flex-col lg:flex-row gap-5">
+
+			<div className='w-full'>
+				<img src={Bg2} alt="" />
+			</div>
+			<div className='border rounded-lg shadow-2xl p-5 w-full'>
+				<div className="  ">
+					<form>
+
+						{/*-- Email input-- */}
+						<div className="mb-6 ">
+							<label htmlFor="">Name*</label>
+							<input
+								type="text"
+								className="form-control block w-full px-4 py-2 text-lg  text-gray-700 bg-white bg-clip-padding border border-gray-700  rounded-lg focus:outline-none"
+								id="exampleFormControlInput2"
+								placeholder="Username"
+							/>
+						</div>
+						<div className="mb-6 ">
+							<label htmlFor="">Email*</label>
+							<input
+								type="text"
+								className="form-control block w-full px-4 py-2 text-lg  text-gray-700 bg-white bg-clip-padding border border-gray-700  rounded-lg focus:outline-none"
+								id="exampleFormControlInput2"
+								placeholder="Username"
+							/>
+						</div>
+						<div className="mb-6 ">
+							<label htmlFor="">Company Name</label>
+							<input
+								type="text"
+								className="form-control block w-full px-4 py-2 text-lg  text-gray-700 bg-white bg-clip-padding border border-gray-700  rounded-lg focus:outline-none"
+								id="exampleFormControlInput2"
+								placeholder="Username"
+							/>
+						</div>
+						<div className="mb-6 ">
+							<label htmlFor="">Website Url</label>
+							<input
+								type="text"
+								className="form-control block w-full px-4 py-2 text-lg  text-gray-700 bg-white bg-clip-padding border border-gray-700  rounded-lg focus:outline-none"
+								id="exampleFormControlInput2"
+								placeholder="Username"
+							/>
+						</div>
+						<div className="mb-6 ">
+							<label htmlFor="">Phone*</label>
+							<input
+								type="text"
+								className="form-control block w-full px-4 py-2 text-lg  text-gray-700 bg-white bg-clip-padding border border-gray-700  rounded-lg focus:outline-none"
+								id="exampleFormControlInput2"
+								placeholder="Username"
+							/>
+						</div>
+						<div className="mb-6 ">
+							<label htmlFor="">Common Message</label>
+							<textarea
+								class="
+        form-control
+        block
+        w-full
+        px-3
+        py-1.5
+        text-base
+        font-normal
+        text-gray-700
+        bg-white bg-clip-padding
+        border border-solid border-gray-300
+        rounded
+        transition
+        ease-in-out
+        m-0
+        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
+      "
+								id="exampleFormControlTextarea1"
+								rows="3"
+								placeholder="Your message"
+							></textarea>
+						</div>
+
+
+						{/* Submit button */}
+						<div className="flex  justify-center mb-6">
+							<button
+								type="button"
+								className="inline-block px-9 py-2 w-full bg-orange-700 text-white font-medium   rounded shadow-md "
+							>
+								SUBMIT
+							</button>
+						</div>
+
+						{/* 2 column grid layout for inline styling */}
+
+					</form>
+				</div>
+			</div>
+
+
+		</div>
+
+
+
 
 
 

@@ -4,11 +4,19 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import Logo from '../../assets/logo/logo.png';
 import NavLinks from './Navlinks';
-
+import DraftsIcon from '@mui/icons-material/Drafts';
+import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled';
+import MapsHomeWorkIcon from '@mui/icons-material/MapsHomeWork';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import TwitterIcon from '@mui/icons-material/Twitter';
 function Navbar() {
 	const [open, setOpen] = useState(false);
 	return (
 		<>
+		
+		
 			<nav className="bg-primary lg:text-white text-black sticky top-0 w-full z-50">
 				<div className="container mx-auto flex items-center font-medium justify-between">
 					<div className="z-50 p-5 lg:w-auto w-full flex justify-between">

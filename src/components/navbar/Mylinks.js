@@ -13,7 +13,7 @@ export const links = [
  
   
   {
-    name: "Blog",
+    name: "Explore TherapyPMS",
     submenu: false,
     menuLink: "/blog",
     sublinks: [
@@ -24,7 +24,7 @@ export const links = [
     ],
   },
   {
-    name: "Training",
+    name: "Features",
     submenu: false,
     menuLink: "/training",
     sublinks: [
@@ -35,7 +35,7 @@ export const links = [
     ],
   },
   {
-    name: "Contact",
+    name: "Contact Us",
     submenu: false,
     menuLink: "/contact",
     sublinks: [
